@@ -56,4 +56,12 @@ public class NameValidatorTest {
 		
 		assertFalse(result);
 	}
+	
+	@Test
+	public void whenEnteredMobileShouldValidateAndPassNumberTest1() {
+		NameValidator validator = new NameValidator();
+		Boolean result = validator.mobileNumberValidator("91 8097177781");
+		
+		assertTrue(result);
+	}
 }
