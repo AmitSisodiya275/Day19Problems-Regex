@@ -10,4 +10,9 @@ public class NameValidator {
 
 		return Pattern.matches(NAME_VALIDATOR, firstName);
 	}
+	
+	public boolean lastNameValidator(String firstName) {
+
+		return Pattern.matches(NAME_VALIDATOR, firstName);
+	}
 }

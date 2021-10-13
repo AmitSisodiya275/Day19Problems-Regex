@@ -32,4 +32,28 @@ public class NameValidatorTest {
 		
 		assertFalse(result);
 	}
+	
+	@Test
+	public void whenGivenLastNameShouldValidateAndPassNameValidatorTest1() {
+		NameValidator validator = new NameValidator();
+		Boolean result = validator.firstNameValidator("Sisodiya");
+		
+		assertTrue(result);
+	}
+	
+	@Test
+	public void whenGivenLastNameShouldValidateAndPassNameValidatorTest2() {
+		NameValidator validator = new NameValidator();
+		Boolean result = validator.firstNameValidator("SIsodiya");
+		
+		assertTrue(result);
+	}
+	
+	@Test
+	public void whenGivenLastNameShouldValidateAndPassNameValidatorTest3() {
+		NameValidator validator = new NameValidator();
+		Boolean result = validator.firstNameValidator("sisodiya");
+		
+		assertFalse(result);
+	}
 }
