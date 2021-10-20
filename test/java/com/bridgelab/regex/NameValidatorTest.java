@@ -26,7 +26,6 @@ public class NameValidatorTest {
 	public void whenGivenFirstNameShouldValidateAndPassNameValidatorTest3() {
 		NameValidator validator = new NameValidator();
 		Boolean result = validator.firstNameValidator("amit");
-
 		assertFalse(result);
 	}
 
@@ -34,7 +33,6 @@ public class NameValidatorTest {
 	public void whenGivenLastNameShouldValidateAndPassNameValidatorTest1() {
 		NameValidator validator = new NameValidator();
 		Boolean result = validator.firstNameValidator("Sisodiya");
-
 		assertTrue(result);
 	}
 
@@ -42,7 +40,6 @@ public class NameValidatorTest {
 	public void whenGivenLastNameShouldValidateAndPassNameValidatorTest2() {
 		NameValidator validator = new NameValidator();
 		Boolean result = validator.firstNameValidator("SIsodiya");
-
 		assertTrue(result);
 	}
 
@@ -50,7 +47,6 @@ public class NameValidatorTest {
 	public void whenGivenLastNameShouldValidateAndPassNameValidatorTest3() {
 		NameValidator validator = new NameValidator();
 		Boolean result = validator.firstNameValidator("sisodiya");
-
 		assertFalse(result);
 	}
 
@@ -58,7 +54,6 @@ public class NameValidatorTest {
 	public void whenEnteredMobileShouldValidateAndPassNumberTest1() {
 		NameValidator validator = new NameValidator();
 		Boolean result = validator.mobileNumberValidator("91 8097177781");
-
 		assertTrue(result);
 	}
 	
@@ -66,7 +61,13 @@ public class NameValidatorTest {
 	public void whenEnteredEmailAddressShouldValidateAndPassEmailTest1() {
 		NameValidator validator = new NameValidator();
 		Boolean result = validator.emailValidator("amitsisodiya@gmail.com");
-		
+		assertTrue(result);
+	}
+	
+	@Test
+	public void whenEnteredPasswordShouldValidateAndPassTest() {
+		NameValidator validator = new NameValidator();
+		Boolean result = validator.passwordValidation("amitsisodiya");
 		assertTrue(result);
 	}
 }
