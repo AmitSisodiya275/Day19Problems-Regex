@@ -67,7 +67,7 @@ public class NameValidatorTest {
 	@Test
 	public void whenEnteredPasswordShouldValidateAndPassTest() {
 		NameValidator validator = new NameValidator();
-		Boolean result = validator.passwordValidation("Amit5sisodiya");
+		Boolean result = validator.passwordValidation("Amit5@sisodiya");
 		assertTrue(result);
 	}
 }
